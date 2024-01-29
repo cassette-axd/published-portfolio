@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="profile_main.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="profile_main.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="profile_main.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="profile_main.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Personal Project: <strong>Speech-to-Text Translator</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Available on my GitHub</p>
+            <img src="translation_img.webp" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This app simulates a translation app where user can speak to their device and the app detects the language spoken and translates it to the desired language. 
+                The purpose of this personal object is to learn more about utilizing python libraries such as speech_recognition and googletrans and applying them to develop 
+                solutions for real world problems such as language barriers and communication difficulty for those who are deaf or have impaired hearing.</p>
+            <img src="speech_img.png" alt="" width="920px" height="500px">
+            <p>When running this app, the user is first asked to what desired language they want their messages to be translated to. If a valid language is entered, the speech_recognition 
+                library will access the user's microphone on their device and extract text from recognized audio. The googletrans library is then used to detect language spoken from the 
+                extracted text and will output the message translated into the language based on the user's selected language.
+            </p>
+            <p>The known languages are stored in a json file in dictionary format with destination keys that are used by the googletrans library to identify and translate languages. 
+                Additionally, users can always change the translated language while the app is still running.
+            </p>
+            <p>If I were to improve on this project, I would like to implement this concept onto an AI chatbot and also have it displayed on a GUI or website for a visual and 
+                interactive experience.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:reyescaseym@gmail.com" class="footer__link">reyescaseym@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                   <a class="social-list__link" href="https://www.linkedin.com/in/casey-reyes-68157a254/">
+                       <i class="fab fa-linkedin"></i>
+                   </a>
+               </li>
+                <li class="social-list__item">
+                   <a class="social-list__link" href="https://github.com/cassette-axd">
+                       <i class="fab fa-github"></i>
+                   </a>
+               </li>
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://twitter.com">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+               </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="index.js"></script>
+        
+    </body>
+</html>

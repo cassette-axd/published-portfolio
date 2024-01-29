@@ -1,0 +1,190 @@
+<!--
+    Author: Casey Reyes
+
+    This file is used to set up the format of my portfolio website.
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Make website accessible on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <!-- Link css file -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <!-- The Header -->
+        <header>
+            <!-- <div class="logo">
+                <img src="#" alt=" ">
+            </div> -->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- The Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Casey Reyes</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">UW-Madison Undergraduate</p>
+            <img src="casey_pic_1.jpg" alt="a picture of Casey Reyes" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Computer Science</h3>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+                    <p>I am pursuing a degree in Computer Science and a minor in Data Science. As of right now, I have learned the fundamentals such as 
+                        basic data structures and object oriented programming, but I am currently pursuing to learn the skills needed for full-stack development.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Student Website Assistant</h3>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+                    <p>As of right now, I am currently working a part-time student job for the Department of Integrative Biology at UW-Madison. 
+                        My main responsibilities include updating the website's content based on submitted requests by faculty and staff through google forms, 
+                        fixing any bugs or formatting issues, and meeting with other members to discuss future plans about the website's updates.
+                    </p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Data Science</h3>
+                    <p>In addition to my computer science degree, I am also pursuing a minor in data science. As of recently, I have learned how to manage big data systems, train models, and 
+                        utilize SQL to query data sets.
+                    </p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Computer & Data Science Undergrad Student</p>
+            
+            <div class="about-me__body">
+                <p>I am from Round Lake, Illinois and currently a student at the University of Wisconsin-Madison majoring in Computer Science and minoring in Data Science. I am familiar with O.O.P, 
+                    Data Structures and Algorithms, and Big Data Systems. My two primary programming languages are Java and Python.</p>
+               <p>Currently, I am working a part-time job at the University of Wisconsin-Madison as a Student Website Assistant for the university's Department of Integrative Biology at the 
+                College of Letters & Science. My main responsibilities include updating the website's content based on submitted requests by faculty and staff through google forms, fixing any bugs 
+                or formatting issues, recommending changes to the website if needed, and meeting with other members to discuss future plans about the website's updates.</p>
+                <p>Right now, I am looking for internship opportunities where I can learn new skills, explore new technologies, and expand my network. As a student, I am trying to absorb as much 
+                    knowledge as I can in Computer Science and Data science through my courses and joining clubs related to my desired field of study.</p>
+                <p>I enjoy collaborating with others and grasping many different perspectives but at the same time, I am perfectly capable of handling tasks independently. Additionally, I can 
+                    be a cooperative team player, but I am also willing to take the lead if the opportunity arises.</p>
+            </div>
+            
+            <img src="casey_2.png" alt="Another picture of Casey posing" class="about-me__img">
+         </section>
+         
+         <!-- My Work -->
+         <section class="my-work" id="work">
+             <h2 class="section__title section__title--work">My Projects</h2>
+             <p class="section__subtitle section__subtitle--work">A selection of my recent projects</p>
+             
+             <div class="portfolio">
+                 <!-- Portfolio item 01 -->
+                 <a href="two_factor.html" class="portfolio__item">
+                     <img src="two_factor.png" alt="picture of my two-factor login system" class="portfolio__img">
+                 </a>
+                 
+                 <!-- Portfolio item 02 -->
+                 <a href="translate.html" class="portfolio__item">
+                     <img src="speech_to_text.png" alt="picture of speech to text logo" class="portfolio__img">
+                 </a>
+                 
+                 <!-- Portfolio item 03 -->
+                 <a href="model_server.html" class="portfolio__item">
+                     <img src="model.png" alt="picture of machine learning data" class="portfolio__img">
+                 </a>
+                 
+                 <!-- Portfolio item 04 -->
+                 <a href="weather.html" class="portfolio__item">
+                     <img src="kafka.png" alt="picture of the earth" class="portfolio__img">
+                 </a>
+                 
+                 <!-- Portfolio item 05 -->
+                 <!-- <a href="#" class="portfolio__item">
+                     <img src="#" alt="" class="portfolio__img">
+                 </a> -->
+                 
+                 <!-- Portfolio item 06 -->
+                 <!-- <a href="#" class="portfolio__item">
+                     <img src="#" alt="" class="portfolio__img">
+                 </a> -->
+                 
+                 <!-- Portfolio item 07 -->
+                 <!-- <a href="#" class="portfolio__item">
+                     <img src="#" alt="" class="portfolio__img">
+                 </a> -->
+                 
+                 <!-- Portfolio item 08 -->
+                 <!-- <a href="#" class="portfolio__item">
+                     <img src="#" alt="" class="portfolio__img">
+                 </a> -->
+                 
+                 <!-- Portfolio item 09 -->
+                 <!-- <a href="#" class="portfolio__item">
+                     <img src="#" alt="" class="portfolio__img">
+                 </a> -->
+                 
+                 <!-- Portfolio item 0 0-->
+                 <!-- <a href="#" class="portfolio__item">
+                     <img src="#" alt="" class="portfolio__img">
+                 </a> -->
+             </div>
+         </section>
+         
+         
+         <!-- Footer -->
+         <footer class="footer">
+             <a href="mailto:reyescaseym@gmail.com" class="footer__link">reyescaseym@gmail.com</a>
+             <ul class="social-list">
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/casey-reyes-68157a254/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/cassette-axd">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+             </ul>
+         </footer>
+
+         <script src="index.js"></script>
+    </body>
+</html>

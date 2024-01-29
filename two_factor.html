@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="profile_main.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="profile_main.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="profile_main.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="profile_main.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Personal Project: <strong>Two-Factor Authentication</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Available on my GitHub</p>
+            <img src="two_factor_img.webp" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This app simulates a two-factor authentication login system. The purpose of this personal object is to learn more about utilizing 
+                tkinter GUI for a frontend user experience and exploring the qrcode and pyotp libraries.</p>
+            <img src="login_img.png" alt="" width="920px" height="500px">
+            <p>With this app, users can create multiple accounts that stores their username, password, and email address. For simplicity, their information is stored in a 
+                JSON file in dictionary format. If a user forgets their password, they can use their email to 
+                verify their identity and create a new one</p>
+            <p>Once the user enters their username and password, a QR code will be created for them to scan with the Google Authenticator App so they can access the verification code for them
+                to enter and also view the code's expiration time.
+            </p>
+            <p>If I were to improve on this project, I would like to utilize SMTP or something similar so I can send the QR code or verification code to the user's email address instead of 
+                the QR code being created locally for a more secure login system. Additionally, I would also like to use SQL or a more complex database to safely secure the users' information.
+            </p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:reyescaseym@gmail.com" class="footer__link">reyescaseym@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                   <a class="social-list__link" href="https://www.linkedin.com/in/casey-reyes-68157a254/">
+                       <i class="fab fa-linkedin"></i>
+                   </a>
+               </li>
+                <li class="social-list__item">
+                   <a class="social-list__link" href="https://github.com/cassette-axd">
+                       <i class="fab fa-github"></i>
+                   </a>
+               </li>
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://twitter.com">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+               </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="index.js"></script>
+        
+    </body>
+</html>

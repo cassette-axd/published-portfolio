@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="profile_main.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="profile_main.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="profile_main.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="profile_main.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                School Project: <strong>Covid-19 Death Predictor</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Available on my GitHub</p>
+            <img src="model_img.jpeg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This school project simulates machine learning by predicting the number and pattern of deaths caused by covid-19 overtime based on given data. 
+                The application utilizes Stochastic Gradient Descent to train a PyTorch model and the model server uses multiple threads and caches the predictions 
+                (to save effort when the server is given the same inputs repeatedly). Additionally, the model server runs in a Docker container and receives requests over a network (via gRPC calls).</p>
+            <!-- <img src="model.png" alt="" width="920px" height="500px"> -->
+            <p>The main goals of this project was to learn how to implement the code for LRU caching and also combine model training with gRPC to create a model server. Additionally, this application 
+                utilizes multiple threads to call methods simultaneously and Docker containers to run the program in a different port from where the data input is being passed somewhere else.
+            </p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:reyescaseym@gmail.com" class="footer__link">reyescaseym@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                   <a class="social-list__link" href="https://www.linkedin.com/in/casey-reyes-68157a254/">
+                       <i class="fab fa-linkedin"></i>
+                   </a>
+               </li>
+                <li class="social-list__item">
+                   <a class="social-list__link" href="https://github.com/cassette-axd">
+                       <i class="fab fa-github"></i>
+                   </a>
+               </li>
+               <li class="social-list__item">
+                   <a class="social-list__link" href="https://twitter.com">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+               </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="index.js"></script>
+        
+    </body>
+</html>
